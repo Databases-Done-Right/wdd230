@@ -125,3 +125,37 @@ footer {
 #lastModified {
     font-size:12px;
 }
+
+/* Hamburger Menu */
+nav > ul { display:none; }
+nav > ul.open { display:block; }
+
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	top:1em;
+	right:0em;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+	font-size:16px;
+	font-weight:bold;
+}
+
+/* Dark Mode */
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 2rem;
+	font-size: 3rem;
+	cursor: pointer;
+}

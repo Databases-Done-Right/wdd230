@@ -7,14 +7,14 @@
         <meta name="description" content="Brett Jameson's course assignment portal for the BYUI class WDD 230 - Web Frontend Development">
         <meta name="author" content="Brett Jameson">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/larger.css">
         <link rel="icon" href="images/favicon.ico">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
         <meta property="og:title" content="WDD230 Course Work" />
         <meta property="og:type" content="article" />
@@ -23,12 +23,14 @@
     </head>
     <body>
         <header>
+            <div id="mode">☑️</div>
             <div class="inner-container">
                 <img src="images/brett-100.jpg" alt="Brett Jameson">
                 <h1>Brett Jameson</h1>
             </div>
         </header>
         <nav>
+            <button id="menu"></button>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="week01/chamber-site-plan.html">Chamber</a></li>
@@ -64,13 +66,14 @@
                 </div>
             </div>
         </main>
-        
         <footer>
             <div class="inner-container">
                 <p>&copy;<span id="year"></span> Brett Jameson (Idaho)</p>
                 <p id="lastModified"></p>
             </div>
         </footer>
+        <script src="scripts/hamburgerMenu.js"></script>
+        <script src="scripts/darkMode.js"></script>
         <script src="scripts/getDates.js"></script>
     </body>
 </html>
