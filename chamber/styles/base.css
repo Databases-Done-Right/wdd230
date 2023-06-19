@@ -22,12 +22,6 @@ header img {
     vertical-align:middle;
     max-width:70%;
 }
-header h1 {
-    text-align:left;
-    font-size:48px;
-    display:inline;
-    vertical-align:middle;
-}
 
 nav {
 	background-color: #222;
@@ -76,8 +70,7 @@ main div.hero-image-container div.hero-cta-container {
     margin:0px auto;
 }
 
-main h2 {
-    text-decoration:underline;
+main h1 {
     text-align:center;
     margin:40px auto 10px;
     width:auto;
