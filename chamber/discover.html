@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Camelot Chamber of Commerce by Brett Jameson - WDD 230</title>
+        <meta name="description" content="Brett Jameson's course assignment portal for the BYUI class WDD 230 - Web Frontend Development">
+        <meta name="author" content="Brett Jameson">
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="icon" href="images/favicon.png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+        <meta property="og:title" content="Camelot Chamber of Commerce by Brett Jameson - WDD 230">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://databases-done-right.github.io/wdd230/chamber/index.html">
+        <meta property="og:image" content="https://databases-done-right.github.io/wdd230/chamber/images/hero.webp">
+    </head>
+    <body>
+        <header>
+            <!-- <div id="mode">☑️</div> -->
+            <div class="inner-container">
+                <img src="images/logo.png" alt="Chamber Logo">
+            </div>
+        </header>
+        <nav>
+            <button id="menu"></button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discovery</a></li>
+                <li><a href="#">Link #2</a></li>
+                <li><a href="#">Link #3</a></li>
+                <li><a href="#">Link #4</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="inner-container">
+                <h1 id="visitorMessage">Welcome!</h1>
+                <div class="discover">
+                    <section class="discoverCard">
+                        <div>
+                            <h3>Camelot Demographics</h3>
+                            <ul>
+                                <li>Population: 14,230</li>
+                                <li>Castles: 21</li>
+                                <li>Elevation: 250'</li>
+                                <li>Acres: 31,402</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Current Events</h3>
+                            <div>
+                                <ul>
+                                    <li><b><u>Jun 22, 1320</u> Jousting Tournament</b> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                                    <li><b><u>Jun 23, 1320</u> Farmers Market</b> - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                                    <li><b><u>Jun 24, 1320</u> Archery Tournament</b> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="discoverCard">
+                        <picture>
+                            <h4>Camelot Castle</h4>
+                            <img src="images/camelot1.webp" alt="Camelot Castle" loading="lazy" width="600" height="300">
+                        </picture>
+                        <picture>
+                            <h4>Sprawling Vistas</h4>
+                            <img src="images/camelot2.webp" alt="Image #2" loading="lazy" width="600" height="300">
+                        </picture>
+                        <picture>
+                            <h4>Quaint Living</h4>
+                            <img src="images/camelot3.webp" alt="Image #3" loading="lazy" width="600" height="300">
+                        </picture>
+                        <picture>
+                            <h4>Center for Commerce</h4>
+                            <img src="images/camelot4.webp" alt="Image #4" loading="lazy" width="600" height="300">
+                        </picture>
+                        <picture>
+                            <h4>Rich Farmland</h4>
+                            <img src="images/camelot5.webp" alt="Image #5" loading="lazy" width="600" height="300">
+                        </picture>
+                        <picture>
+                            <h4>Coastal Get-a-ways</h4>
+                            <img src="images/camelot6.webp" alt="Image #6" loading="lazy" width="600" height="300">
+                        </picture>
+                        <picture>
+                            <h4>Townships</h4>
+                            <img src="images/camelot7.webp" alt="Image #7" loading="lazy" width="600" height="300">
+                        </picture>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="inner-container">
+                <p>&copy;<span id="year"></span> Camelot Chamber of Commerce, 123 Castle Drive, Camelot, England &nbsp; &nbsp; (234) 555-1111</p>
+                <p>Developed by Brett Jameson for WDD 230</p>
+                <p id="lastModified"></p>
+            </div>
+        </footer>
+        <script src="scripts/hamburgerMenu.js"></script>
+        <script src="scripts/getDates.js"></script>
+        <script src="scripts/trackVisits.js"></script>
+    </body>
+</html>
