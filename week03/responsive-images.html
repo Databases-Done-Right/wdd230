@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Brett Jameson - WDD 230 - Responsive Iamges</title>
+        <meta name="description" content="Meta description goes here for the responsive images exercize">
+        <meta name="author" content="Brett Jameson">
+        <!--
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        -->
+          <link rel="stylesheet" href="styles/responsive-images.css">
+    </head>
+    <body>
+        <main>
+            <div class="hero">
+                <picture>
+                    <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                    <img src="images/hero-large.webp" alt="Pocatello Temple" width="2" height="1">
+                </picture>
+            </main>
+        <footer>
+            <div class="inner-container">
+                <p>&copy;<span id="year"></span> Brett Jameson (Idaho)</p>
+                <p id="lastModified"></p>
+            </div>
+        </footer>
+        <script src="scripts/getDates.js"></script>
+    </body>
+</html>
