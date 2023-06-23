@@ -159,3 +159,32 @@ nav > ul.open { display:block; }
 	font-size: 3rem;
 	cursor: pointer;
 }
+
+.hero {
+    position:relative;
+    text-align:center;
+}
+
+.hero img {
+    max-width:100%;
+    height:auto;
+}
+
+.heroOverlay {
+	position: absolute;
+	top: 30px;
+	left: 200px;
+	background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+
+.heroOverlay p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
+	font-family:"Great Vibes", serif;
+}

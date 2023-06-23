@@ -19,7 +19,7 @@ mainButton.addEventListener('click', () => {
  });
 
  function deleteChapter(chapter) {
-    chapter = chapter.slice(0, chapter.length - 18);
+    chapter = chapter.slice(0, chapter.length - 1);
     chaptersArray = chaptersArray.filter((item) => item !== chapter);
     setChapterList(chaptersArray);
  }
@@ -35,7 +35,7 @@ mainButton.addEventListener('click', () => {
         let deleteButton = document.createElement('button');
         deleteButton.innerHTML = "❌";
         deleteButton.addEventListener('click', () => {
-            deleteChapter(li.innerHTML);
+            deleteChapter(li.textContent);
             li.remove();
         });
         li.append(deleteButton);
