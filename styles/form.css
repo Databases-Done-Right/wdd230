@@ -61,7 +61,7 @@ form label.top input:required:valid {
     border-left: var(--formInvalid) solid 6px;
 }
 
-#pageRatingTextField { margin:0px 10px; padding:5px; text-align:center; width:30px; }
+#pageRatingTextField { margin:0px 10px; padding:5px; text-align:center; width:30px; display:inline-block; font-size:1.75rem; color:blue; }
 
 #pageRatingContainer { margin-top:1rem; }
 
