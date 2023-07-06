@@ -1,0 +1,21 @@
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#cards > section {
+    flex-direction: column;
+    text-align: center;
+    margin:4px;
+    padding:20px auto;
+    background-color: blue;
+    color:#fff;
+}
+
+#cards > section img {
+    max-width:80%;
+    height:auto;
+    border:solid 1px #fff;
+    margin-bottom:20px;
+    padding:2px;
+}
