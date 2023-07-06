@@ -7,27 +7,27 @@
     {
       "name" : "John Smith",
       "gender" : "male",
-      "birthdate" : "19920111",
+      "birthdate" : "19920111"
     },
     {
       "name" : "Jane Smith",
       "gender" : "female",
-      "birthdate" : "19930502",
+      "birthdate" : "19930502"
     },
     {
       "name" : "Sue Smith",
       "gender" : "female",
-      "birthdate" : "20100422",
+      "birthdate" : "20100422"
     },
     {
       "name" : "Will Smith",
       "gender" : "male",
-      "birthdate" : "20120830",
+      "birthdate" : "20120830"
     },
     {
       "name" : "Bob Smith",
       "gender" : "male",
-      "birthdate" : "20150102",
+      "birthdate" : "20150102"
     }
   ]
 }
