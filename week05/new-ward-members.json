@@ -1,0 +1,33 @@
+{
+  "familyName" : "Smith",
+  "moveInDate" : "20230312",
+  "numberOfMembers" : 5,
+  "visitedByBishopric" : true,
+  "members" : [
+    {
+      "name" : "John Smith",
+      "gender" : "male",
+      "birthdate" : "19920111",
+    },
+    {
+      "name" : "Jane Smith",
+      "gender" : "female",
+      "birthdate" : "19930502",
+    },
+    {
+      "name" : "Sue Smith",
+      "gender" : "female",
+      "birthdate" : "20100422",
+    },
+    {
+      "name" : "Will Smith",
+      "gender" : "male",
+      "birthdate" : "20120830",
+    },
+    {
+      "name" : "Bob Smith",
+      "gender" : "male",
+      "birthdate" : "20150102",
+    }
+  ]
+}
