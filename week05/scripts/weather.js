@@ -7,37 +7,36 @@ const lat = 49.75;
 const lon = 6.63;
 const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`;
 
-const displayWeatherData = (prophets) => {
-    console.log(prophets);
-    /*
-    const cards = document.querySelector('#cards');
-    prophets.forEach((prophet) => {
-    var card = document.createElement("section");
-    var fullName = document.createElement("h2");
-    var portrait = document.createElement("img");
-    fullName.textContent = `${prophet.name} ${prophet.lastname}`;
-    portrait.setAttribute("src", prophet.imageurl);
-    portrait.setAttribute("alt", fullName.textContent + " Portrait");
-    portrait.setAttribute("loading", "lazy");
-    portrait.setAttribute("width", "300");
-    portrait.setAttribute("height", "400");
-    card.appendChild(fullName);
-    card.appendChild(portrait);
-    cards.appendChild(card);
-  });
-    */
+const displayResultsOld = (weather) => {
+    console.log(weather);
+    const theTemp = weather.main.temp;
+    const theDescription = weather.weather[0].description;
+    const theIconUrl = `https://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`;
+    console.log(theTemp, theDescription, theIconUrl);
 }
 
-async function getWeatherData(url) {
+function displayResults(data) {
+  currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+  const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+  let desc = data.weather[0].description;
+  weatherIcon.setAttribute('src', iconsrc);
+  weatherIcon.setAttribute('alt', desc);
+  captionDesc.textContent = `${desc}`;
+}
+
+async function apiFetch(url) {
   try {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      displayWeatherData(data);
+      console.log(data); // testing only
+      displayResults(data); // uncomment when ready
+    } else {
+        throw Error(await response.text());
     }
   } catch (error) {
       console.log(error);
   }
 }
 
-getWeatherData(url); 
+apiFetch(url); 
