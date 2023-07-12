@@ -1,0 +1,2 @@
+let currentTimestamp = new Date();
+document.querySelector("#timestampField").value = (currentTimestamp.getMonth()+1) + "/" + currentTimestamp.getDate() + "/"  + currentTimestamp.getFullYear() + " "   + currentTimestamp.getHours() + ":"   + (currentTimestamp.getMinutes()<10?'0':'') + currentTimestamp.getMinutes() + ":"  + (currentTimestamp.getSeconds()<10?'0':'') + currentTimestamp.getSeconds();
