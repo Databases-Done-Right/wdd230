@@ -239,6 +239,11 @@ nav > ul.open { display:block; }
     background-color:#fff;
 }
 
+#joinUsPage form .submitBtn {
+    background-color:green;
+}
+
+
 #joinUsPage form label.top input:required {
     border: var(--formInvalid) solid 1px;
 }
