@@ -344,3 +344,75 @@ form label.top input:required:valid {
 #joinUsPage #reEnterPasswordField.invalid {
     border: var(--formInvalid) solid 1px;
 }
+
+main #memberCards {
+    display:grid;
+    grid-template: 1fr / auto auto;
+    grid-gap:10px;
+}
+
+main #memberCards > div {
+    border:solid 1px #ddd;
+    padding:20px;
+    border-radius:10px;
+    width:100%;
+    text-align:center;
+    box-sizing: border-box;
+}
+
+main #memberCards > div:hover {
+    border: solid 1px #000;
+}
+
+main #memberCards > div:nth-child(even) {
+    grid-column: 2/3;
+}
+
+main #memberCards > div:nth-child(odd) {
+    grid-column: 1/2;
+}
+
+main #memberCards > div p {
+    text-align:left;
+}
+
+main #memberCards > div div, main #memberCards > div a {
+    margin:10px auto; 
+}
+
+.toggleMenu {
+    text-align:right;
+}
+
+main #memberCards.list {
+    display:flex;
+    flex-direction:column;
+}
+
+main #memberCards.list > div {
+    display:grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding:0px;
+    font-size:.8rem;
+    text-align:left;
+}
+
+main #memberCards.list > div > * {
+    margin:10px auto;
+}
+
+main #memberCards.list h3 {
+    font-size:.8rem;
+}
+
+main #memberCards.list img {
+    display:none;
+}
+
+main #memberCards.list p {
+    display:none;
+}
+
+main #memberCards.list div:nth-child(7) {
+    display:none;
+}

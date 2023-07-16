@@ -1,0 +1,74 @@
+{
+    "members": [
+        {
+            "name": "Armor and Things Weaponry",
+            "address": "3 Squire Place",
+            "phoneNumber": "(555) 234-4567",
+            "websiteURL": "https://www.armorsandthings.com",
+            "imageURL": "images/armor.webp",
+            "membershipLevel": "Gold",
+            "info": "Don't go out to battle unprotected and unarmed! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit soluta culpa dolore, a voluptatibus deleniti! Debitis, et ab iusto optio temporibus, nisi tempore eius commodi placeat perspiciatis laborum sunt.",
+            "hours": "Dawn to Dusk"
+        },
+        {
+            "name": "Ye Olde Archery Shop",
+            "address": "117 Squire Place",
+            "phoneNumber": "(555) 234-4568",
+            "websiteURL": "https://www.yeoldearchery.com",
+            "imageURL": "images/archery.webp",
+            "membershipLevel": "Gold",
+            "info": "Your source for all your archery supplies! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit soluta culpa dolore, a voluptatibus deleniti! Debitis, et ab iusto optio temporibus, nisi tempore eius commodi placeat perspiciatis laborum sunt.",
+            "hours": "Sunrise to Sunset"
+        },
+        {
+            "name": "Gwenivere's Boutique",
+            "address": "3 Queens Court Rd.",
+            "phoneNumber": "(555) 234-5678",
+            "websiteURL": "https://boutique.ladygwen.com",
+            "imageURL": "images/boutique.webp",
+            "membershipLevel": "Gold",
+            "info": "The finest of custom made gowns. Dress your best for the next festival. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit soluta culpa dolore, a voluptatibus deleniti! Debitis, et ab iusto optio temporibus, nisi tempore eius commodi placeat perspiciatis laborum sunt." ,
+            "hours": "By Appointment Only"
+        },
+        {
+            "name": "Hot Iron Blacksmith",
+            "address": "112 Squire Place",
+            "phoneNumber": "(555) 123-4567",
+            "websiteURL": "https://www.hotironblacksmith.com",
+            "imageURL": "images/blacksmith.webp",
+            "membershipLevel": "Silver",
+            "info": "The best smithy in the castle! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit soluta culpa dolore, a voluptatibus deleniti! Debitis, et ab iusto optio temporibus, nisi tempore eius commodi placeat perspiciatis laborum sunt.",
+            "hours": "Sunup to Sundown"
+        },
+        {
+            "name": "Festival Catering",
+            "address": "41 Kings Court",
+            "phoneNumber": "(555) 123-6789",
+            "websiteURL": "https://www.camelotcatering.com",
+            "imageURL": "images/catering.webp",
+            "membershipLevel": "Silver",
+            "info": "Quality fare to help make your next feast truly memorable. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit soluta culpa dolore, a voluptatibus deleniti! Debitis, et ab iusto optio temporibus, nisi tempore eius commodi placeat perspiciatis laborum sunt.",
+            "hours": "1:00 PM to 4:00 PM"
+        },
+        {
+            "name": "Camelot Carrier Pigeons",
+            "address": "17 Kings Court",
+            "phoneNumber": "(555) 123-5678",
+            "websiteURL": "https://www.camelotpostalservice.com",
+            "imageURL": "images/pigeon.webp",
+            "membershipLevel": "NP",
+            "info": "Stay in contact with friends and family far away. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit soluta culpa dolore, a voluptatibus deleniti! Debitis, et ab iusto optio temporibus, nisi tempore eius commodi placeat perspiciatis laborum sunt.",
+            "hours": "9:00 AM to 5:00 PM"
+        },
+        {
+            "name": "Lance's Lots",
+            "address": "23 Peddler Haven Rd.",
+            "phoneNumber": "(555) 234-4569",
+            "websiteURL": "https://www.lanceslots.com",
+            "imageURL": "images/lancelot.webp",
+            "membershipLevel": "Bronze",
+            "info": "Pawn shop where you can find just about anything. If Lance doesn't have it, he can probably find it for ye. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit soluta culpa dolore, a voluptatibus deleniti! Debitis, et ab iusto optio temporibus, nisi tempore eius commodi placeat perspiciatis laborum sunt.",
+            "hours": "10:00 AM - 7:00 PM"
+        }
+    ]
+}
