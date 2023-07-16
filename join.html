@@ -39,32 +39,88 @@
                 <li><a href="form.html">Form</a></li>
             </ul>
         </nav>
-        <main>
+        <main id="joinUsPage">
             <div class="inner-container">
-                <h1>Join our community!</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit soluta culpa dolore, a voluptatibus deleniti! Debitis, et ab iusto optio temporibus, nisi tempore eius commodi placeat perspiciatis laborum cum sunt.</p>
-                <div id="formmessage"></div>
-                <form method="get" action="thankyou.html">
-                    <input type="hidden" id="timestampField" name="timestamp" value="">
+                <div>
+                    <h1>Join our community!</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit soluta culpa dolore, a voluptatibus deleniti! Debitis, et ab iusto optio temporibus, nisi tempore eius commodi placeat perspiciatis laborum cum sunt.</p>
+                    <div id="formmessage"></div>
+                </div>
+                <div>
+                    <form method="get" action="thankyou.html">
+                        <input type="hidden" id="timestampField" name="timestamp" value="">
+                        <fieldset>
+                            <legend>Application Information</legend>
+                            <label class="top">First Name* <input type="text" id="firstNameField" name="firstName" required></label>
+                            <label class="top">Last Name* <input type="text" id="lastNameField" name="lastName" required></label>
+                            <label class="top">Title or Position* <input type="text" id="positionField" name="position" required minlength="7" pattern="[A-Za-z0-9-\s]{7,}"></label>
+                            <label class="top">Email* <input type="email" id="emailField" name="email" placeholder="someone@byui.edu" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu" title="Please enter a valid email address"></label>
+                            <label class="top">Mobile Number* <input type="telephone" id="mobileNumberField" name="mobileNumber" required></label>
+                            <label class="top">Organization Name* <input type="text" id="organizationNameField" name="organizationName" required></label>
+                            <label class="top">Membership Level <select id="membershipLevelField" name="membershipLevel">
+                                <option value="Gold Membership">Gold Membership</option>
+                                <option value="Silver Membership">Silver Membership</option>
+                                <option value="Bronze Membership">Bronze Membership</option>
+                                <option value="NP Membership">Non Profit Membership (no fee)</option>
+                            </select></label>
+                            <label class="top">Organization Description <textarea id="organizationDescriptionField" name="organizationDescription" placeholder="Please tell us a little about your organization." rows="6"></textarea></label>
+                            <input type="submit" value="Submit Application" class="submitBtn">
+                        </fieldset>
+                    </form>
+                </div>
+                <div id="memberBenefits">
                     <fieldset>
-                        <legend>Application Information</legend>
-                        <label class="top">First Name* <input type="text" id="firstNameField" name="firstName" required></label>
-                        <label class="top">Last Name* <input type="text" id="lastNameField" name="lastName" required></label>
-                        <label class="top">Title or Position* <input type="text" id="positionField" name="position" required minlength="7" pattern="[A-Za-z0-9-\s]{7,}"></label>
-                        <label class="top">Email* <input type="email" id="emailField" name="email" placeholder="someone@byui.edu" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu" title="Please enter a valid email address"></label>
-                        <label class="top">Mobile Number* <input type="telephone" id="mobileNumberField" name="mobileNumber" required></label>
-                        <label class="top">Organization Name* <input type="text" id="organizationNameField" name="organizationName" required></label>
-                        <label class="top">Membership Level <select id="membershipLevelField" name="membershipLevel">
-                            <option value=""></option>
-                            <option value="NP Membership">Non Profit Membership (no fee)</option>
-                            <option value="Bronze Membership">Bronze Membership</option>
-                            <option value="Silver Membership">Silver Membership</option>
-                            <option value="Gold Membership">Gold Membership</option>
-                        </select></label>
-                        <label class="top">Organization Description <textarea id="organizationDescriptionField" name="organizationDescription" placeholder="Please tell us a little about your organization." rows="6"></textarea></label>
+                        <legend>Membership Benefits</legend>
+                        <section class="card">
+                            <h2>Gold Membership Package</h2>
+                            <div>
+                                <p>Some of the many exciting benefits enjoyed by our gold level members include:</p>
+                                <ul>
+                                    <li><b>Free carrier pigeon services</b> through one of our many authorized dealerships.</li>
+                                    <li><b>Front and Center Seating</b> at our annual jousting fundraiser.</li>
+                                    <li><b>Meet the Combatants</b> Exclusive back stage access and tour at our annual jousting fundraiser.</li>
+                                    <li><b>Featured Listing</b> on our Chamber businesses page.</li>
+                                    <li><b>Full Size Ad</b> for your business at each of our Chamber events.</li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="card">
+                            <h2>Silver Membership Package</h2>
+                            <p>Some of the many exciting benefits enjoyed by our silver level members include:</p>
+                            <div>
+                                <ul>
+                                    <li><b>Discounted carrier pigeon services</b> through one of our many authorized dealerships.</li>
+                                    <li><b>Premium Seating</b> at our annual jousting fundraiser.</li>
+                                    <li><b>Business Listing</b> on our Chamber businesses page.</li>
+                                    <li><b>Half Size Ad</b> for your business at each of our Chamber events.</li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="card">
+                            <h2>Bronze Membership Package</h2>
+                            <p>Some of the many exciting benefits enjoyed by our bronze level members include:</p>
+                            <div>
+                                <ul>
+                                    <li><b>One way carrier pigeon services</b> through one of our many authorized dealerships.</li>
+                                    <li><b>Two Tickets</b> to attend our annual jousting fundraiser.</li>
+                                    <li><b>Business Listing</b> on our Chamber businesses page.</li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="card">
+                            <h2>Non Profit Membership Package</h2>
+                            <p>Are you a non profit? Then we have the membership for you! Benefits include:</p>
+                            <div>
+                                <ul>
+                                    <li><b>Free carrier pigeon services</b> through one of our many authorized dealerships.</li>
+                                    <li><b>Premium Seating</b> at our annual jousting fundraiser.</li>
+                                    <li><b>Featured Listing</b> on our Chamber businesses page.</li>
+                                    <li><b>Business Listing</b> on our Chamber businesses page.</li>
+                                </ul>
+                            </div>
+                        </section>
                     </fieldset>
-                    <input type="submit" value="Submit Application" class="submitBtn">
-                </form>
+                </div>
             </div>
         </main>
         <footer>
