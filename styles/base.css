@@ -195,3 +195,7 @@ nav > ul.open { display:block; }
 	font-size: 2rem;
 	font-family:"Great Vibes", serif;
 }
+
+#localTemperature figure {
+    margin-top:0px;
+}
