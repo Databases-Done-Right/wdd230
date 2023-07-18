@@ -9,9 +9,7 @@ async function getMembers(limit) {
         data.members.sort(() => Math.random() - 0.5);
         data.members = data.members.filter((member) => member.membershipLevel == "Gold" || member.membershipLevel == "Silver").slice(0,limit);
     }
-    else {
-        displayMembers(data.members);
-    }
+    displayMembers(data.members);
 }
 
 const displayMembers = (members) => {
@@ -48,4 +46,4 @@ const displayMembers = (members) => {
     });
 }
 
-getMembers();
+getMembers(2);

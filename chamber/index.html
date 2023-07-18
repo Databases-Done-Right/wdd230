@@ -35,21 +35,21 @@
                 <li><a href="discover.html">Discovery</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a href="#">Link #4</a></li>
             </ul>
         </nav>
         <main>
+            <div id="meetAndGreet"><b>You're Invited!</b> to the Chamber Meet and Greet! Held every Wednesday at 7:00 PM at our main office!<span onClick="closeBanner();">x</span></div>
             <div class="hero-image-container">
                 <div class="hero-cta-container">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button>Join Us!</button>
+                    <a href="join.html"><button>Join Us!</button></a>
                 </div>
             </div>
             <div class="inner-container">
                 <h1>Welcome to the Camelot Chamber of Commerce</h1>
                 <div class="card-container">
                     <section class="card">
-                        <h3>Current Events</h3>
+                        <h2>Current Events</h2>
                         <div>
                             <ul>
                                 <li><b><u>Jun 22, 1320</u> Jousting Tournament</b> - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
@@ -59,20 +59,20 @@
                         </div>
                     </section>
                     <section class="card">
-                        <h3>Weather</h3>
+                        <h2>Weather</h2>
                         <div>
-                            <div>Camelot</div>
-                            <div>72F - Cloudy</div>
+                            <div id="weatherForecast">
+                                <div>
+                                    <h3>Current</h3>
+                                    <img id="weather-icon" src="https://placehold.co/1x1" alt="Temperature Icon" loading="lazy" width="50" height="50">
+                                    <div id="current-temp"></div>
+                                </div>
+                            </div>
                         </div>
                     </section>
                     <section class="card">
-                        <h3>Company Spotlight</h3>
-                        <div>
-                            <img src="images/archery.webp" alt="Archery Shop Ad Image">
-                            <h4>Ye Olde Archery Shop</h4>
-                            <p>Your source for all your archery supplies! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <p>Conveniently located off the main quare, across from the smithy.</p>
-                        </div>
+                        <h2>Member Spotlight</h2>
+                        <div id="memberCards"></div>
                     </section>
                 </div>
             </div>
@@ -86,5 +86,8 @@
         </footer>
         <script src="scripts/hamburgerMenu.js"></script>
         <script src="scripts/getDates.js"></script>
+        <script src="scripts/weather.js"></script>
+        <script src="scripts/meetAndGreet.js"></script>
+        <script src="scripts/featuredMembers.js"></script>
     </body>
 </html>

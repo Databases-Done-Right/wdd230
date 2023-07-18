@@ -13,7 +13,6 @@ body {
 header {
     background-color:blue;
     color:#fff;
-    padding:10px 0px; 
     margin:0px auto;
     border-bottom:solid 1px #fff;
 }
@@ -27,6 +26,7 @@ header img {
     padding:1px; 
     vertical-align:middle;
     max-width:70%;
+    margin:10px 0px; 
 }
 
 nav {
@@ -124,7 +124,7 @@ main section.card:nth-child(3) img {
     border:solid 1px #ddd;
 }
 
-main section.card h3 {
+main section.card h2 {
     color:#fff;
     text-decoration:none;
     text-align:center;
@@ -416,3 +416,41 @@ main #memberCards.list p {
 main #memberCards.list div:nth-child(7) {
     display:none;
 }
+
+#weatherForecast > div {
+    display:inline-block;
+    width:120px;
+    height:120px;
+    font-size:12px;
+    padding:10px;
+    border:solid 1px #ddd;
+    margin:5px;
+    border-radius:5px;
+}
+
+#weatherForecast > div h3 {
+    margin:0px;
+}
+
+#weatherForecast > div > div {
+    text-transform:capitalize;
+}
+
+#meetAndGreet {
+    text-align:center;
+    padding:10px;
+    background-color:#ff0000;
+    border-bottom: solid 1px #fff;
+    color:#fff;
+}
+
+#meetAndGreet > span {
+    float:right;
+    cursor:pointer;
+}
+
+nav ul {
+    margin-bottom:0px;
+}
+
+#memberCards img { float:none; }
