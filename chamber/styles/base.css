@@ -467,3 +467,11 @@ nav ul {
 .discover h3 {
     margin-bottom:5px;
 }
+
+.discover img {
+    transition: transform 1s;
+}
+
+.discover img:hover {
+  transform: scale(1.05);
+}
